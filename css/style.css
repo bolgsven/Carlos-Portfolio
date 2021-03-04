@@ -316,9 +316,15 @@ body {
 }
 
 .iconse {
-	position: right;
+	text-align: right;
+	text-decoration: none;
 	padding: 20px 10px;
 	right: 100%;
 	z-index: 100;
 	width: 100%;
+}
+
+ul {
+	list-style-type: none;
+	display: inline-block;
 }

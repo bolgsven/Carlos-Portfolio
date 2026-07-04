@@ -9,8 +9,8 @@ html {
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  color: #1f2933;
-  background: #f5f7f7;
+  color: #1e293b;
+  background: #f8fafc;
   line-height: 1.6;
 }
 
@@ -20,16 +20,18 @@ body {
   margin: 0 auto;
 }
 
+/* HERO */
+
 .hero {
-  background: #0f3f44;
+  background: linear-gradient(135deg, #111827, #1e3a8a, #7c3aed);
   color: #ffffff;
-  padding: 80px 20px;
+  padding: 85px 20px;
   text-align: center;
-  border-bottom: 5px solid #c9a227;
+  border-bottom: 5px solid #60a5fa;
 }
 
 .tagline {
-  color: #c9a227;
+  color: #bfdbfe;
   font-weight: bold;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -37,23 +39,23 @@ body {
 }
 
 .hero h1 {
-  font-size: 50px;
+  font-size: 52px;
   margin: 10px 0;
 }
 
 .hero h2 {
   font-size: 22px;
   font-weight: normal;
-  color: #f7f4ee;
+  color: #e0e7ff;
   margin: 10px auto 25px;
-  max-width: 800px;
+  max-width: 850px;
 }
 
 .intro {
   max-width: 780px;
   margin: 0 auto 28px;
   font-size: 18px;
-  color: #f7f4ee;
+  color: #eef2ff;
 }
 
 .hero-buttons {
@@ -63,33 +65,37 @@ body {
   flex-wrap: wrap;
 }
 
+/* BUTTONS */
+
 .button {
   display: inline-block;
-  background: #c9a227;
-  color: #062f34;
+  background: #2563eb;
+  color: #ffffff;
   padding: 13px 24px;
-  border-radius: 6px;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
 }
 
 .button:hover {
-  background: #d9b63a;
+  background: #1d4ed8;
 }
 
 .button.secondary {
   background: transparent;
   color: #ffffff;
-  border: 2px solid #c9a227;
+  border: 2px solid #93c5fd;
 }
 
 .button.secondary:hover {
-  background: #c9a227;
-  color: #062f34;
+  background: #ffffff;
+  color: #1e3a8a;
 }
 
+/* NAVIGATION */
+
 .nav {
-  background: #062f34;
+  background: #111827;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -110,17 +116,19 @@ body {
 }
 
 .nav a:hover {
-  color: #c9a227;
+  color: #93c5fd;
 }
+
+/* SECTIONS */
 
 .section {
   padding: 60px 20px;
-  background: #f7f4ee;
+  background: #f8fafc;
 }
 
 .section h2 {
   font-size: 34px;
-  color: #062f34;
+  color: #111827;
   margin-top: 0;
   margin-bottom: 18px;
 }
@@ -134,18 +142,20 @@ body {
 }
 
 .dark {
-  background: #0f3f44;
-  color: #ffffff;
+  background: #eef2ff;
+  color: #1e293b;
 }
 
 .dark h2 {
-  color: #ffffff;
+  color: #111827;
 }
 
 .dark p,
 .dark li {
-  color: #f7f4ee;
+  color: #334155;
 }
+
+/* PROJECTS */
 
 .project-grid {
   display: grid;
@@ -156,22 +166,22 @@ body {
 
 .project-card {
   background: #ffffff;
-  color: #1f2933;
-  border: 1px solid #d8d0c2;
-  border-radius: 10px;
+  color: #1e293b;
+  border: 1px solid #dbeafe;
+  border-radius: 14px;
   padding: 24px;
-  box-shadow: 0 6px 18px rgba(6, 47, 52, 0.18);
+  box-shadow: 0 8px 22px rgba(30, 58, 138, 0.12);
 }
 
 .project-card h3 {
-  color: #062f34;
+  color: #1e3a8a;
   margin-top: 0;
   margin-bottom: 12px;
 }
 
 .tech {
   font-weight: bold;
-  color: #0f3f44;
+  color: #7c3aed;
   font-size: 14px;
   margin-top: 18px;
 }
@@ -185,19 +195,20 @@ body {
 
 .project-links a {
   display: inline-block;
-  background: #0f3f44;
+  background: #2563eb;
   color: #ffffff;
   text-decoration: none;
   padding: 9px 14px;
-  border-radius: 5px;
+  border-radius: 6px;
   font-weight: bold;
   font-size: 14px;
 }
 
 .project-links a:hover {
-  background: #c9a227;
-  color: #062f34;
+  background: #7c3aed;
 }
+
+/* SKILLS */
 
 .skills-grid {
   display: grid;
@@ -208,16 +219,18 @@ body {
 
 .skill-box {
   background: #ffffff;
-  border: 1px solid #d8d0c2;
-  border-radius: 10px;
+  border: 1px solid #dbeafe;
+  border-radius: 14px;
   padding: 22px;
-  box-shadow: 0 4px 12px rgba(6, 47, 52, 0.12);
+  box-shadow: 0 6px 16px rgba(30, 58, 138, 0.10);
 }
 
 .skill-box h3 {
-  color: #062f34;
+  color: #1e3a8a;
   margin-top: 0;
 }
+
+/* CURRENT FOCUS */
 
 .focus-list {
   padding-left: 22px;
@@ -228,30 +241,37 @@ body {
   margin-bottom: 10px;
 }
 
+/* CONTACT */
+
 .contact {
   text-align: center;
+  background: #ffffff;
 }
 
 .contact a {
-  color: #0f3f44;
+  color: #2563eb;
 }
 
 .contact .button {
-  color: #062f34;
+  color: #ffffff;
   margin-top: 15px;
 }
 
+/* FOOTER */
+
 footer {
-  background: #062f34;
+  background: #111827;
   color: #ffffff;
   text-align: center;
   padding: 25px 20px;
-  border-top: 4px solid #c9a227;
+  border-top: 5px solid #2563eb;
 }
 
 footer p {
   margin: 0;
 }
+
+/* RESPONSIVE */
 
 @media (max-width: 900px) {
   .project-grid,

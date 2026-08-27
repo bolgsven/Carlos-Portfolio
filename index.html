@@ -2,206 +2,890 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carlos Irias | Portfolio</title>
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Carlos Irias — Computer & IT portfolio featuring web development, automation, privacy-focused technology and digital projects."
+  >
+
+  <meta name="theme-color" content="#070b14">
+
+  <title>Carlos Irias | Technology Portfolio</title>
+
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-  <header class="hero">
-    <div class="container">
-      <p class="tagline">Carlos Irias</p>
-      <h1>Personal Portfolio</h1>
-      <h2>Computer & IT Student | Python Learner | Web Projects | Translation Workflow Tools</h2>
+  <!-- Accessibility -->
+  <a class="skip-link" href="#main-content">
+    Skip to main content
+  </a>
 
-      <p class="intro">
-        I am building practical projects using HTML, CSS, JavaScript, Python and GitHub Pages.
-        This portfolio brings together my learning projects, websites, and digital work.
-      </p>
 
-      <div class="hero-buttons">
-        <a href="#projects" class="button">View Projects</a>
-        <a href="#contact" class="button secondary">Contact Me</a>
-      </div>
-    </div>
-  </header>
-
-  <nav class="nav">
+  <!-- NAVIGATION -->
+  <nav class="nav" aria-label="Main navigation">
     <div class="container nav-inner">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
+
+      <a
+        href="#home"
+        class="nav-brand"
+        aria-label="Carlos Irias homepage"
+      >
+        CI<span>.</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+
     </div>
   </nav>
 
-  <main>
 
-    <section id="about" class="section">
-      <div class="container">
-        <h2>About Me</h2>
-        <p>
-          My name is Carlos Irias. I am currently studying Computer & IT and developing my
-          skills in web development, Python programming, GitHub, and digital project management.
+  <!-- HERO -->
+  <header class="hero" id="home">
+
+    <div class="hero-grid" aria-hidden="true"></div>
+
+    <div class="container hero-layout">
+
+      <div class="hero-copy">
+
+        <p class="eyebrow">
+          CARLOS IRIAS · DIGITAL PORTFOLIO
         </p>
-        <p>
-          I also work with translation-related tools and workflows, including document handling,
-          translation counting systems, and professional website setup for translation services.
+
+        <h1>
+          Building practical
+          <span class="gradient-text">
+            digital solutions.
+          </span>
+        </h1>
+
+        <p class="hero-specialisms">
+          Computer & IT
+          <span>·</span>
+          Web Development
+          <span>·</span>
+          Automation
+          <span>·</span>
+          Digital Projects
         </p>
-        <p>
-          This portfolio is a place to organise my projects, show my progress, and demonstrate
-          what I am learning and building.
+
+        <p class="intro">
+          I build and explore practical technology projects across
+          web development, automation, privacy and digital workflows,
+          combining technical learning with real-world applications.
         </p>
+
+        <div class="hero-buttons">
+
+          <a
+            href="#projects"
+            class="button"
+          >
+            Explore Projects
+          </a>
+
+          <a
+            href="https://github.com/bolgsven"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button button-secondary"
+          >
+            View GitHub
+          </a>
+
+        </div>
+
       </div>
-    </section>
 
-    <section id="projects" class="section dark">
+
+      <!-- TECHNOLOGY PROFILE PANEL -->
+      <aside
+        class="tech-panel"
+        aria-label="Professional profile"
+      >
+
+        <div class="terminal-header">
+          <div class="terminal-dots" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <span class="terminal-title">
+            portfolio.profile
+          </span>
+        </div>
+
+        <div class="terminal-content">
+
+          <p class="terminal-command">
+            &gt; initialise_profile
+          </p>
+
+          <div class="terminal-row">
+            <span class="terminal-key">location</span>
+            <strong>Bicester, UK</strong>
+          </div>
+
+          <div class="terminal-row">
+            <span class="terminal-key">focus</span>
+            <strong>IT / Web / Automation</strong>
+          </div>
+
+          <div class="terminal-row">
+            <span class="terminal-key">languages</span>
+            <strong>English + Spanish</strong>
+          </div>
+
+          <div class="terminal-row">
+            <span class="terminal-key">status</span>
+
+            <strong class="status-open">
+              <span class="status-dot"></span>
+              Open to opportunities
+            </strong>
+          </div>
+
+          <div class="terminal-row">
+            <span class="terminal-key">mode</span>
+            <strong>Building & learning</strong>
+          </div>
+
+          <p class="terminal-ready">
+            &gt; ready<span class="cursor">_</span>
+          </p>
+
+        </div>
+
+      </aside>
+
+    </div>
+
+  </header>
+
+
+  <main id="main-content">
+
+
+    <!-- FEATURED PROJECTS -->
+    <section
+      id="projects"
+      class="section section-dark"
+    >
+
       <div class="container">
-        <h2>Projects</h2>
-        <p class="section-intro">
-          A selection of websites, learning projects, and GitHub repositories.
-        </p>
 
-        <div class="project-grid">
+        <div class="section-heading">
 
-          <article class="project-card">
+          <div>
+            <p class="section-label">
+              01 · SELECTED WORK
+            </p>
+
+            <h2>Featured Projects</h2>
+          </div>
+
+          <p class="section-description">
+            Practical projects combining technology, problem solving,
+            web development and digital workflows.
+          </p>
+
+        </div>
+
+
+        <div class="featured-grid">
+
+
+          <!-- PERDAFI -->
+          <article class="project-card featured-card">
+
+            <div class="project-top">
+              <span class="project-number">01</span>
+              <span class="project-status">Private Beta</span>
+            </div>
+
+            <h3>PERDAFI</h3>
+
+            <p class="project-subtitle">
+              Personal Data Firewall
+            </p>
+
+            <p>
+              A privacy-focused research project exploring how digital
+              tools can help people understand and reduce unnecessary
+              personal-data disclosure.
+            </p>
+
+            <p>
+              The project combines interface design, privacy-by-design
+              thinking and cloud-based technology in a controlled
+              research environment.
+            </p>
+
+            <div class="tech-list">
+              <span>Cloudflare</span>
+              <span>JavaScript</span>
+              <span>Privacy</span>
+              <span>Web Technology</span>
+            </div>
+
+            <div class="project-note">
+              Currently maintained as a private research beta.
+            </div>
+
+          </article>
+
+
+          <!-- BOLGSVENIA -->
+          <article class="project-card featured-card">
+
+            <div class="project-top">
+              <span class="project-number">02</span>
+              <span class="project-status live">Live</span>
+            </div>
+
             <h3>Bolgsvenia Global</h3>
-            <p>
-              A professional website for Spanish ↔ English translation services,
-              including service information, quote request links, and contact details.
+
+            <p class="project-subtitle">
+              Business Website
             </p>
-            <p class="tech">HTML · CSS · GitHub Pages · Domain setup</p>
-            <div class="project-links">
-              <a href="https://bolgsven.github.io/bolgsvenia-global/" target="_blank">Live Site</a>
-              <a href="https://github.com/bolgsven/bolgsvenia-global" target="_blank">GitHub</a>
+
+            <p>
+              A professional website created for Spanish ↔ English
+              translation services, designed around simple navigation,
+              clear service information and practical client access.
+            </p>
+
+            <p>
+              The project includes website structure, responsive design,
+              deployment and ongoing improvements to the digital
+              customer experience.
+            </p>
+
+            <div class="tech-list">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>GitHub Pages</span>
+              <span>Web Design</span>
             </div>
+
+            <div class="project-actions">
+
+              <a
+                href="https://bolgsven.github.io/bolgsvenia-global/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                Live Site →
+              </a>
+
+              <a
+                href="https://github.com/bolgsven/bolgsvenia-global"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link muted-link"
+              >
+                GitHub →
+              </a>
+
+            </div>
+
           </article>
 
-          <article class="project-card">
-            <h3>Carlos Portfolio</h3>
-            <p>
-              This personal portfolio website, created to present my projects,
-              skills, studies, and technical learning progress.
-            </p>
-            <p class="tech">HTML · CSS · GitHub Pages</p>
-            <div class="project-links">
-              <a href="https://bolgsven.github.io/Carlos-Portfolio/" target="_blank">Live Site</a>
-              <a href="https://github.com/bolgsven/Carlos-Portfolio" target="_blank">GitHub</a>
-            </div>
-          </article>
 
-          <article class="project-card">
-            <h3>HTML Portfolio</h3>
-            <p>
-              A web development practice project focused on HTML structure,
-              page organisation, and basic portfolio layout.
-            </p>
-            <p class="tech">HTML · CSS · Web Practice</p>
-            <div class="project-links">
-              <a href="https://github.com/bolgsven/html-portfolio" target="_blank">GitHub</a>
-            </div>
-          </article>
+          <!-- TRANSLATION TOOLS -->
+          <article class="project-card featured-card">
 
-          <article class="project-card">
-            <h3>Skip Intro Movies Series</h3>
-            <p>
-              A learning project idea connected to movies and series, focused on
-              organising code and developing practical programming logic.
-            </p>
-            <p class="tech">Code Practice · Project Planning · GitHub</p>
-            <div class="project-links">
-              <a href="https://github.com/bolgsven/skip-intro-movies-series" target="_blank">GitHub</a>
+            <div class="project-top">
+              <span class="project-number">03</span>
+              <span class="project-status development">
+                Development
+              </span>
             </div>
-          </article>
 
-          <article class="project-card">
-            <h3>Project1</h3>
-            <p>
-              A general learning repository used to practise coding, GitHub workflow,
-              and project organisation.
-            </p>
-            <p class="tech">Learning Project · GitHub</p>
-            <div class="project-links">
-              <a href="https://github.com/bolgsven/Project1" target="_blank">GitHub</a>
-            </div>
-          </article>
-
-          <article class="project-card">
             <h3>Translation Workflow Tools</h3>
-            <p>
-              Python-based learning work connected to translation document handling,
-              PDF text extraction, counting work, and CSV reporting.
+
+            <p class="project-subtitle">
+              Python & Document Automation
             </p>
-            <p class="tech">Python · CSV · PDF Processing · Workflow Automation</p>
+
+            <p>
+              Technical experiments designed around real translation
+              workflows, including document handling, text extraction,
+              counting and structured reporting.
+            </p>
+
+            <p>
+              These projects connect Python learning with practical
+              workflow and automation problems.
+            </p>
+
+            <div class="tech-list">
+              <span>Python</span>
+              <span>CSV</span>
+              <span>PDF Processing</span>
+              <span>Automation</span>
+            </div>
+
+            <div class="project-note">
+              Ongoing development and experimentation.
+            </div>
+
           </article>
 
         </div>
+
       </div>
+
     </section>
 
-    <section id="skills" class="section">
+
+
+    <!-- LEARNING LAB -->
+    <section class="section">
+
       <div class="container">
-        <h2>Skills</h2>
+
+        <div class="section-heading">
+
+          <div>
+            <p class="section-label">
+              02 · LEARNING LAB
+            </p>
+
+            <h2>Development & Experiments</h2>
+          </div>
+
+          <p class="section-description">
+            Smaller projects documenting my technical development,
+            experimentation and progression.
+          </p>
+
+        </div>
+
+
+        <div class="lab-grid">
+
+
+          <!-- PORTFOLIO -->
+          <article class="lab-card">
+
+            <span class="lab-type">
+              WEB DEVELOPMENT
+            </span>
+
+            <h3>Carlos Portfolio</h3>
+
+            <p>
+              This portfolio itself is an ongoing web project focused on
+              responsive design, accessibility, project presentation and
+              professional digital identity.
+            </p>
+
+            <div class="tech-list small">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>GitHub Pages</span>
+            </div>
+
+            <div class="project-actions">
+
+              <a
+                href="https://bolgsven.github.io/Carlos-Portfolio/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                Live Site →
+              </a>
+
+              <a
+                href="https://github.com/bolgsven/Carlos-Portfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link muted-link"
+              >
+                GitHub →
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- HTML PORTFOLIO -->
+          <article class="lab-card">
+
+            <span class="lab-type">
+              WEB PRACTICE
+            </span>
+
+            <h3>HTML Portfolio</h3>
+
+            <p>
+              An earlier web-development project used to practise HTML
+              structure, page organisation, CSS and basic portfolio
+              development.
+            </p>
+
+            <div class="tech-list small">
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+
+            <div class="project-actions">
+
+              <a
+                href="https://github.com/bolgsven/html-portfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                GitHub →
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- SKIP INTRO -->
+          <article class="lab-card">
+
+            <span class="lab-type">
+              CODE PRACTICE
+            </span>
+
+            <h3>Skip Intro Movies Series</h3>
+
+            <p>
+              A learning project built around movies and series,
+              used to explore programming logic, project structure
+              and GitHub workflow.
+            </p>
+
+            <div class="tech-list small">
+              <span>Programming</span>
+              <span>GitHub</span>
+              <span>Planning</span>
+            </div>
+
+            <div class="project-actions">
+
+              <a
+                href="https://github.com/bolgsven/skip-intro-movies-series"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                GitHub →
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- PROJECT 1 -->
+          <article class="lab-card">
+
+            <span class="lab-type">
+              EXPERIMENT
+            </span>
+
+            <h3>Project1</h3>
+
+            <p>
+              A general development repository used for coding
+              experiments, GitHub workflow practice and project
+              organisation.
+            </p>
+
+            <div class="tech-list small">
+              <span>GitHub</span>
+              <span>Development</span>
+            </div>
+
+            <div class="project-actions">
+
+              <a
+                href="https://github.com/bolgsven/Project1"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+              >
+                GitHub →
+              </a>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- SKILLS -->
+    <section
+      id="skills"
+      class="section section-dark"
+    >
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div>
+            <p class="section-label">
+              03 · CAPABILITIES
+            </p>
+
+            <h2>Skills & Technology</h2>
+          </div>
+
+          <p class="section-description">
+            A developing technical toolkit supported by practical
+            projects, study and real-world digital work.
+          </p>
+
+        </div>
+
 
         <div class="skills-grid">
-          <div class="skill-box">
+
+
+          <article class="skill-card">
+
+            <div class="skill-icon">
+              &lt;/&gt;
+            </div>
+
             <h3>Web Development</h3>
-            <p>HTML, CSS, responsive layouts, GitHub Pages, simple business websites.</p>
-          </div>
 
-          <div class="skill-box">
-            <h3>Programming</h3>
-            <p>Python basics, file handling, CSV files, PDF text extraction, automation practice.</p>
-          </div>
+            <p>
+              Building and maintaining responsive websites with a
+              focus on usability, structure and accessibility.
+            </p>
 
-          <div class="skill-box">
-            <h3>Tools</h3>
-            <p>GitHub, GitHub Pages, VS Code, Jupyter notebooks, Docker basics.</p>
-          </div>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript foundations</li>
+              <li>Responsive layouts</li>
+              <li>GitHub Pages</li>
+            </ul>
 
-          <div class="skill-box">
-            <h3>Translation Workflows</h3>
-            <p>Spanish ↔ English document translation, quote preparation, document organisation.</p>
-          </div>
+          </article>
+
+
+          <article class="skill-card">
+
+            <div class="skill-icon">
+              PY
+            </div>
+
+            <h3>Programming & Automation</h3>
+
+            <p>
+              Developing Python skills through practical file,
+              document and workflow exercises.
+            </p>
+
+            <ul>
+              <li>Python foundations</li>
+              <li>File handling</li>
+              <li>CSV processing</li>
+              <li>PDF text workflows</li>
+              <li>Automation concepts</li>
+            </ul>
+
+          </article>
+
+
+          <article class="skill-card">
+
+            <div class="skill-icon">
+              SYS
+            </div>
+
+            <h3>Systems & Tools</h3>
+
+            <p>
+              Working with common development, cloud and technical
+              environments.
+            </p>
+
+            <ul>
+              <li>Git & GitHub</li>
+              <li>VS Code</li>
+              <li>Cloudflare</li>
+              <li>Docker foundations</li>
+              <li>Jupyter notebooks</li>
+            </ul>
+
+          </article>
+
+
+          <article class="skill-card">
+
+            <div class="skill-icon">
+              NET
+            </div>
+
+            <h3>IT & Networking</h3>
+
+            <p>
+              Building core Computer & IT knowledge with practical
+              networking exercises.
+            </p>
+
+            <ul>
+              <li>Networking foundations</li>
+              <li>Cisco Packet Tracer</li>
+              <li>Computer systems</li>
+              <li>Troubleshooting concepts</li>
+              <li>Technical support skills</li>
+            </ul>
+
+          </article>
+
+
+          <article class="skill-card">
+
+            <div class="skill-icon">
+              EN
+            </div>
+
+            <h3>Languages & Communication</h3>
+
+            <p>
+              Professional bilingual communication combined with
+              extensive client-facing experience.
+            </p>
+
+            <ul>
+              <li>English</li>
+              <li>Spanish</li>
+              <li>Customer communication</li>
+              <li>Documentation</li>
+              <li>Client support</li>
+            </ul>
+
+          </article>
+
+
+          <article class="skill-card">
+
+            <div class="skill-icon">
+              UX
+            </div>
+
+            <h3>Digital Projects</h3>
+
+            <p>
+              Translating ideas and real operational problems into
+              practical digital solutions.
+            </p>
+
+            <ul>
+              <li>Project organisation</li>
+              <li>Privacy-by-design thinking</li>
+              <li>Workflow improvement</li>
+              <li>Website deployment</li>
+              <li>Continuous iteration</li>
+            </ul>
+
+          </article>
+
         </div>
+
       </div>
+
     </section>
 
-    <section class="section dark">
-      <div class="container">
-        <h2>Current Focus</h2>
-        <ul class="focus-list">
-          <li>Improving Python programming skills</li>
-          <li>Building cleaner HTML and CSS websites</li>
-          <li>Organising GitHub repositories professionally</li>
-          <li>Creating practical tools for translation workflows</li>
-          <li>Continuing Computer & IT studies</li>
-        </ul>
+
+
+    <!-- ABOUT -->
+    <section
+      id="about"
+      class="section"
+    >
+
+      <div class="container about-layout">
+
+        <div>
+
+          <p class="section-label">
+            04 · ABOUT
+          </p>
+
+          <h2>
+            Technology with a practical purpose.
+          </h2>
+
+        </div>
+
+
+        <div class="about-copy">
+
+          <p class="about-lead">
+            I am developing my career in Computer & IT while building
+            practical projects that connect technology with real-world
+            problems.
+          </p>
+
+          <p>
+            My work currently spans web development, Python,
+            automation, privacy-focused technology and digital
+            workflow improvement.
+          </p>
+
+          <p>
+            Alongside my technical development, I bring professional
+            experience in customer service, client work, business
+            operations and Spanish-English communication.
+          </p>
+
+          <p>
+            I am particularly interested in opportunities where I can
+            continue developing technically while contributing
+            practical problem-solving, communication and customer
+            experience skills.
+          </p>
+
+        </div>
+
       </div>
+
     </section>
 
-    <section id="contact" class="section contact">
+
+
+    <!-- CURRENT FOCUS -->
+    <section class="section focus-section">
+
       <div class="container">
-        <h2>Contact</h2>
-        <p>
-          If you would like to contact me about a project, collaboration, or website work,
-          use the links below.
+
+        <p class="section-label">
+          CURRENTLY
         </p>
 
-        <p><strong>Email:</strong> <a href="mailto:albertoirias83@gmail.com">albertoirias83@gmail.com</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/bolgsven" target="_blank">github.com/bolgsven</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/carlos-i-32618814a/" target="_blank">Carlos Irias</a></p>
+        <div class="focus-banner">
 
-        <a href="mailto:albertoirias83@gmail.com" class="button">Email Me</a>
+          <div>
+            <h2>What I'm working on now</h2>
+
+            <p>
+              Developing stronger foundations across programming,
+              networking and practical technology projects.
+            </p>
+          </div>
+
+          <div class="focus-items">
+
+            <span>Python</span>
+            <span>Web Development</span>
+            <span>Networking</span>
+            <span>Automation</span>
+            <span>Computer & IT</span>
+
+          </div>
+
+        </div>
+
       </div>
+
+    </section>
+
+
+
+    <!-- CONTACT -->
+    <section
+      id="contact"
+      class="section contact-section"
+    >
+
+      <div class="container contact-layout">
+
+        <div>
+
+          <p class="section-label">
+            05 · CONTACT
+          </p>
+
+          <h2>Let's connect.</h2>
+
+          <p>
+            Interested in my projects, technical development or a
+            professional opportunity? You can connect with me through
+            LinkedIn or explore my work on GitHub.
+          </p>
+
+        </div>
+
+
+        <div class="contact-actions">
+
+          <a
+            href="https://www.linkedin.com/in/carlos-i-32618814a/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button"
+          >
+            LinkedIn
+          </a>
+
+          <a
+            href="https://github.com/bolgsven"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button button-secondary"
+          >
+            GitHub
+          </a>
+
+        </div>
+
+      </div>
+
     </section>
 
   </main>
 
+
+
+  <!-- FOOTER -->
   <footer>
-    <div class="container">
-      <p>© 2026 Carlos Irias. All rights reserved.</p>
+
+    <div class="container footer-inner">
+
+      <p>
+        © 2026 Carlos Irias
+      </p>
+
+      <p class="footer-tech">
+        Designed & built with HTML + CSS
+      </p>
+
     </div>
+
   </footer>
 
 </body>

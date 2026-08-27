@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Bolgsvenia Global — Revisión rápida de la web</title>
+
+  <meta
+    name="description"
+    content="Formulario breve y adaptado para móviles para revisar la página web de Bolgsvenia Global.">
+
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="googlebot" content="noindex, nofollow, noarchive">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f4ee;
+      color: #1f2933;
+      line-height: 1.5;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 20px 14px 40px;
+    }
+
+    .app {
+      width: 100%;
+      max-width: 680px;
+    }
+
+    .hero {
+      background: #0f5257;
+      color: #ffffff;
+      border-radius: 18px 18px 0 0;
+      padding: 22px;
+      text-align: center;
+      border-bottom: 4px solid #c9a227;
+    }
+
+    .language-switch {
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .language-switch a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: bold;
+      padding: 5px 8px;
+      border: 1px solid rgba(255, 255, 255, 0.45);
+      border-radius: 6px;
+    }
+
+    .language-switch a.active {
+      background: #c9a227;
+      color: #062f34;
+      border-color: #c9a227;
+    }
+
+    .hero .brand {
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #eadb9d;
+      margin-bottom: 8px;
+    }
+
+    .hero h1 {
+      margin: 0 0 10px;
+      font-size: 30px;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      margin: 0;
+      font-size: 16px;
+      color: #f7f4ee;
+    }
+
+    .content {
+      background: #ffffff;
+      border-radius: 0 0 18px 18px;
+      padding: 22px;
+      box-shadow: 0 8px 28px rgba(6, 47, 52, 0.12);
+    }
+
+    .intro-box {
+      background: #f7f4ee;
+      border-left: 5px solid #c9a227;
+      border-radius: 10px;
+      padding: 18px;
+      margin-bottom: 22px;
+    }
+
+    .intro-box h2 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      color: #062f34;
+    }
+
+    .intro-box ul {
+      margin: 10px 0 0;
+      padding-left: 20px;
+    }
+
+    .intro-box li {
+      margin-bottom: 7px;
+    }
+
+    .website-button,
+    .submit-button {
+      display: block;
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      padding: 15px 18px;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .website-button {
+      background: #0f5257;
+      color: #ffffff;
+      margin: 18px 0 8px;
+    }
+
+    .website-button:hover,
+    .website-button:focus {
+      background: #0b4247;
+    }
+
+    .return-note {
+      text-align: center;
+      color: #4b5563;
+      font-size: 13px;
+      margin: 0 0 26px;
+    }
+
+    .question {
+      margin-bottom: 26px;
+    }
+
+    .question h3 {
+      margin: 0 0 12px;
+      color: #062f34;
+      font-size: 18px;
+      line-height: 1.35;
+    }
+
+    .question-number {
+      color: #8b6f12;
+    }
+
+    .options {
+      display: grid;
+      gap: 10px;
+    }
+
+    .option {
+      position: relative;
+    }
+
+    .option input {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .option label {
+      display: block;
+      width: 100%;
+      padding: 14px 15px;
+      border: 2px solid #ded8ca;
+      border-radius: 10px;
+      background: #ffffff;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.15s ease;
+    }
+
+    .option label:hover {
+      border-color: #c9a227;
+    }
+
+    .option input:checked + label {
+      border-color: #0f5257;
+      background: #edf6f5;
+      color: #062f34;
+      font-weight: bold;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 110px;
+      resize: vertical;
+      padding: 13px;
+      border: 2px solid #ded8ca;
+      border-radius: 10px;
+      font: inherit;
+      color: #1f2933;
+      background: #ffffff;
+    }
+
+    textarea:focus {
+      outline: none;
+      border-color: #0f5257;
+      box-shadow: 0 0 0 3px rgba(15, 82, 87, 0.10);
+    }
+
+    .optional {
+      font-size: 13px;
+      font-weight: normal;
+      color: #6b7280;
+    }
+
+    .privacy-note {
+      background: #f7f4ee;
+      border-radius: 10px;
+      padding: 14px;
+      font-size: 13px;
+      color: #4b5563;
+      margin: 4px 0 18px;
+    }
+
+    .submit-button {
+      background: #c9a227;
+      color: #062f34;
+    }
+
+    .submit-button:hover,
+    .submit-button:focus {
+      background: #d9b63a;
+    }
+
+    .submit-button:disabled {
+      opacity: 0.65;
+      cursor: wait;
+    }
+
+    .status {
+      display: none;
+      margin-top: 16px;
+      padding: 14px;
+      border-radius: 10px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .status.error {
+      display: block;
+      background: #fff0f0;
+      color: #9b2c2c;
+      border: 1px solid #efc2c2;
+    }
+
+    .thank-you {
+      display: none;
+      text-align: center;
+      padding: 28px 8px 12px;
+    }
+
+    .thank-you h2 {
+      color: #062f34;
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    .thank-you p {
+      color: #4b5563;
+    }
+
+    .footer {
+      text-align: center;
+      color: #6b7280;
+      font-size: 12px;
+      padding-top: 18px;
+    }
+
+    @media (max-width: 520px) {
+      .page {
+        padding: 0;
+      }
+
+      .app {
+        max-width: none;
+      }
+
+      .hero,
+      .content {
+        border-radius: 0;
+      }
+
+      .hero {
+        padding: 18px 16px 24px;
+      }
+
+      .hero h1 {
+        font-size: 27px;
+      }
+
+      .content {
+        padding: 20px 16px 28px;
+        box-shadow: none;
+      }
+
+      .option label {
+        padding: 15px 14px;
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page">
+    <div class="app">
+
+      <header class="hero">
+
+        <div class="language-switch">
+          <a href="bolgsvenia-review.html">EN</a>
+          <a href="bolgsvenia-review-es.html" class="active">ES</a>
+        </div>
+
+        <div class="brand">Bolgsvenia Global</div>
+
+        <h1>Revisión rápida de la página web</h1>
+
+        <p>
+          Gracias por ayudarme a probar la web.
+          Solo debería llevar unos 5 minutos.
+        </p>
+
+      </header>
+
+      <main class="content">
+
+        <div id="review-content">
+
+          <section class="intro-box">
+
+            <h2>Paso 1 — Echa un vistazo a la web</h2>
+
+            <p>
+              Navega por la página con normalidad e intenta encontrar:
+            </p>
+
+            <ul>
+              <li>aproximadamente cuánto cuesta una traducción;</li>
+              <li>cómo solicitar un presupuesto;</li>
+              <li>si se pueden proporcionar traducciones para uso oficial en el Reino Unido.</li>
+            </ul>
+
+            <a
+              class="website-button"
+              href="https://bolgsveniaglobal.co.uk/es.html"
+              target="_blank"
+              rel="noopener noreferrer">
+              ABRIR LA WEB DE BOLGSVENIA
+            </a>
+
+            <p class="return-note">
+              La web se abrirá en una pestaña nueva.
+              Después vuelve aquí para responder las preguntas.
+            </p>
+
+          </section>
+
+          <form id="feedback-form">
+
+            <input
+              type="hidden"
+              name="access_key"
+              value="06b454bd-fa33-4ee4-b7d8-264075f2c497">
+
+            <input
+              type="hidden"
+              name="subject"
+              value="Nueva opinión sobre la web de Bolgsvenia">
+
+            <input
+              type="hidden"
+              name="from_name"
+              value="Aplicación de revisión web de Bolgsvenia">
+
+            <input
+              type="checkbox"
+              name="botcheck"
+              style="display:none">
+
+            <section class="question">
+
+              <h3>
+                <span class="question-number">1.</span>
+                ¿Te quedó claro qué servicios ofrece Bolgsvenia Global?
+              </h3>
+
+              <div class="options">
+
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="claridad-1"
+                    name="clarity"
+                    value="Muy claro"
+                    required>
+
+                  <label for="claridad-1">
+                    Muy claro
+                  </label>
+                </div>
+
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="claridad-2"
+                    name="clarity"
+                    value="Claro">
+
+                  <label for="claridad-2">
+                    Claro
+                  </label>
+                </div>
+
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="claridad-3"
+                    name="clarity"
+                    value="Un poco confuso">
+
+                  <label for="claridad-3">
+                    Un poco confuso
+                  </label>
+                </div>
+
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="claridad-4"
+                    name="clarity"
+                    value="Muy confuso">
+
+                  <label for="claridad-4">
+                    Muy confuso
+                  </label>
+                </div>
+
+              </div>
+
+            </section>
+
+            <section class="question">
+
+              <h3>
+                <span class="question-number">2.</span>
+                ¿Fue fácil encontrar el precio y cómo solicitar un presupuesto?
+              </h3>
+
+              <div class="options">
+
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="buscar-1"
+                    name="price_and_contact"
+                    value="Muy fácil"
+                    required>
+
+                  <label for="buscar-1">
+                    Muy fácil
+                  </label>
+                </div>
+
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="buscar-2"
+                    name="price_and_contact"
+                    value="Fácil">
+
+                  <label for="buscar-2">
+                    Fácil
+                  </label>
+                </div>
+
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="buscar-3"
+                    name="price_and_contact"
+                    value="Difícil">
+
+                  <label for="buscar-3">
+                    Difícil
+                  </label>
+                </div>
+
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="buscar-4"
+                    name="price_and_contact"
+                    value="Muy difícil">
+
+                  <label for="buscar-4">
+                    Muy difícil
+                  </label>
+                </div>
+
+              </div>
+
+            </section>
+
+            <section class="question">
+
+              <h3>
+                <span class="question-number">3.</span>
+                ¿Pudiste entender si Bolgsvenia puede ayudar con traducciones para uso oficial en el Reino Unido?
+              </h3>
+
+              <div class="options">
+
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="oficial-1"
+                    name="official_uk_use"
+                    value="Sí, claramente"
+                    required>
+
+                  <label for="oficial-1">
+                    Sí, claramente
+                  </label>
+                </div>
+
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="oficial-2"
+                    name="official_uk_use"
+                    value="Más o menos">
+
+                  <label for="oficial-2">
+                    Más o menos
+                  </label>
+                </div>
+
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="oficial-3"
+                    name="official_uk_use"
+                    value="No mucho">
+
+                  <label for="oficial-3">
+                    No mucho
+                  </label>
+                </div>
+
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="oficial-4"
+                    name="official_uk_use"
+                    value="No">
+
+                  <label for="oficial-4">
+                    No
+                  </label>
+                </div>
+
+              </div>
+
+            </section>
+
+            <section class="question">
+
+              <h3>
+                <span class="question-number">4.</span>
+                ¿La página te pareció profesional y de confianza?
+              </h3>
+
+              <div class="options">
+
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="confianza-1"
+                    name="professional_and_trustworthy"
+                    value="Sí"
+                    required>
+
+                  <label for="confianza-1">
+                    Sí
+                  </label>
+                </div>
+
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="confianza-2"
+                    name="professional_and_trustworthy"
+                    value="En general sí">
+
+                  <label for="confianza-2">
+                    En general sí
+                  </label>
+                </div>
+
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="confianza-3"
+                    name="professional_and_trustworthy"
+                    value="No demasiado">
+
+                  <label for="confianza-3">
+                    No demasiado
+                  </label>
+                </div>
+
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="confianza-4"
+                    name="professional_and_trustworthy"
+                    value="No">
+
+                  <label for="confianza-4">
+                    No
+                  </label>
+                </div>
+
+              </div>
+
+            </section>
+
+            <section class="question">
+
+              <h3>
+                <span class="question-number">5.</span>
+                ¿Te sentirías cómodo/a contactando con Bolgsvenia a través de esta web?
+              </h3>
+
+              <div class="options">
+
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="contacto-1"
+                    name="comfortable_contacting"
+                    value="Sí"
+                    required>
+
+                  <label for="contacto-1">
+                    Sí
+                  </label>
+                </div>
+
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="contacto-2"
+                    name="comfortable_contacting"
+                    value="Quizás">
+
+                  <label for="contacto-2">
+                    Quizás
+                  </label>
+                </div>
+
+                <div class="option">
+                  <input
+                    type="radio"
+                    id="contacto-3"
+                    name="comfortable_contacting"
+                    value="No">
+
+                  <label for="contacto-3">
+                    No
+                  </label>
+                </div>
+
+              </div>
+
+            </section>
+
+            <section class="question">
+
+              <h3>
+                <span class="question-number">6.</span>
+                Si pudieras mejorar UNA sola cosa de la web, ¿cuál sería?
+                <span class="optional">(opcional)</span>
+              </h3>
+
+              <textarea
+                name="one_improvement"
+                maxlength="600"
+                placeholder="Con un comentario breve es suficiente..."></textarea>
+
+            </section>
+
+            <div class="privacy-note">
+              Esta revisión no solicita tu nombre ni tu correo electrónico.
+              Por favor, no incluyas información personal, confidencial
+              ni datos de terceras personas en el comentario.
+            </div>
+
+            <button
+              type="submit"
+              class="submit-button"
+              id="submit-button">
+              ENVIAR OPINIÓN
+            </button>
+
+            <div
+              id="status"
+              class="status"
+              role="status"
+              aria-live="polite">
+            </div>
+
+          </form>
+
+        </div>
+
+        <section
+          id="thank-you"
+          class="thank-you">
+
+          <h2>¡Muchas gracias!</h2>
+
+          <p>
+            Tu opinión se ha enviado correctamente
+            y me ayudará a mejorar Bolgsvenia Global.
+          </p>
+
+          <a
+            class="website-button"
+            href="https://bolgsveniaglobal.co.uk/es.html"
+            target="_blank"
+            rel="noopener noreferrer">
+            VISITAR BOLGSVENIA GLOBAL
+          </a>
+
+        </section>
+
+        <div class="footer">
+          Prueba de la página web de Bolgsvenia Global
+        </div>
+
+      </main>
+
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById("feedback-form");
+    const submitButton = document.getElementById("submit-button");
+    const statusBox = document.getElementById("status");
+    const reviewContent = document.getElementById("review-content");
+    const thankYou = document.getElementById("thank-you");
+
+    form.addEventListener("submit", async function (event) {
+
+      event.preventDefault();
+
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      submitButton.disabled = true;
+      submitButton.textContent = "ENVIANDO...";
+
+      statusBox.className = "status";
+      statusBox.textContent = "";
+
+      const formData = new FormData(form);
+      const payload = Object.fromEntries(formData);
+
+      try {
+
+        const response = await fetch(
+          "https://api.web3forms.com/submit",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "Accept": "application/json"
+            },
+            body: JSON.stringify(payload)
+          }
+        );
+
+        const result = await response.json();
+
+        if (result.success) {
+
+          form.reset();
+
+          reviewContent.style.display = "none";
+          thankYou.style.display = "block";
+
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+
+        } else {
+
+          throw new Error(
+            result.message || "Error al enviar"
+          );
+
+        }
+
+      } catch (error) {
+
+        statusBox.className = "status error";
+
+        statusBox.textContent =
+          "Lo sentimos, no se ha podido enviar tu opinión. Inténtalo de nuevo.";
+
+        submitButton.disabled = false;
+
+        submitButton.textContent =
+          "ENVIAR OPINIÓN";
+      }
+
+    });
+  </script>
+
+</body>
+</html>

@@ -1,2 +1,2 @@
 # Carlos-Portfolio
-My portfolio
+Personal portfolio showcasing web development projects, digital work and professional experience.

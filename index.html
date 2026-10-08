@@ -18,6 +18,7 @@
   <title>Carlos Irias | Technology Portfolio</title>
 
   <link rel="stylesheet" href="css/style.css?v=20260827-3">
+  <link rel="stylesheet" href="css/network-rescue.css?v=20261008-1">
 </head>
 
 <body>
@@ -42,6 +43,7 @@
 
       <div class="nav-links">
         <a href="#projects">Projects</a>
+        <a href="#network-challenge">Challenge</a>
         <a href="#skills">Skills</a>
         <a href="#about">Profile</a>
         <a href="#education">Education</a>
@@ -735,6 +737,130 @@
 
 
 
+    
+    <!-- NETWORK RESCUE — INTERACTIVE LAB -->
+    <section id="network-challenge" class="section nr-section">
+      <div class="container">
+        <div class="section-heading nr-heading">
+          <div>
+            <p class="section-label">03 · INTERACTIVE LAB</p>
+            <h2>Can you restore the network?</h2>
+          </div>
+          <p class="section-description">
+            A short troubleshooting challenge built around networking concepts
+            I am developing through Cisco study and practical labs.
+          </p>
+        </div>
+    
+        <div class="nr-app" id="network-rescue" aria-labelledby="nr-title">
+          <div class="nr-topbar">
+            <div>
+              <span class="nr-kicker">NETWORK RESCUE</span>
+              <strong id="nr-title">NOC Troubleshooting Challenge</strong>
+            </div>
+    
+            <div class="nr-progress" aria-label="Challenge progress">
+              <span class="nr-progress-dot is-active" data-progress="0"></span>
+              <span class="nr-progress-dot" data-progress="1"></span>
+              <span class="nr-progress-dot" data-progress="2"></span>
+            </div>
+          </div>
+    
+          <div class="nr-layout">
+            <div class="nr-incident-panel">
+              <div class="nr-incident-meta">
+                <span class="nr-live-dot"></span>
+                <span id="nr-incident-number">INCIDENT 01 / 03</span>
+              </div>
+    
+              <h3 id="nr-incident-title">Websites are not loading</h3>
+              <p id="nr-incident-description">
+                A user reports that Wi-Fi is connected, but websites will not open.
+              </p>
+    
+              <div class="nr-device-card">
+                <span>WORKSTATION</span>
+                <strong id="nr-device-name">WS-BIC-014</strong>
+                <small id="nr-device-status">Connected · User affected</small>
+              </div>
+    
+              <div class="nr-objective">
+                <span>OBJECTIVE</span>
+                <p>Run diagnostics, identify the most likely fault, then apply the fix.</p>
+              </div>
+    
+              <p class="nr-rule">
+                Run at least <strong>two diagnostics</strong> before submitting a diagnosis.
+              </p>
+            </div>
+    
+            <div class="nr-console-panel">
+              <div class="nr-terminal">
+                <div class="nr-terminal-bar">
+                  <span class="nr-dot"></span>
+                  <span class="nr-dot"></span>
+                  <span class="nr-dot"></span>
+                  <span>support@carlos:~</span>
+                </div>
+    
+                <pre id="nr-terminal-output" class="nr-terminal-output" aria-live="polite">&gt; Incident loaded.
+    &gt; Select a diagnostic command below.</pre>
+              </div>
+    
+              <div class="nr-command-group" aria-label="Diagnostic commands">
+                <button type="button" class="nr-command" data-command="ipconfig">ipconfig</button>
+                <button type="button" class="nr-command" data-command="gateway">ping gateway</button>
+                <button type="button" class="nr-command" data-command="internet">ping 8.8.8.8</button>
+                <button type="button" class="nr-command" data-command="nslookup">nslookup</button>
+              </div>
+            </div>
+          </div>
+    
+          <div class="nr-diagnosis-panel">
+            <div>
+              <span class="nr-panel-label">YOUR DIAGNOSIS</span>
+              <p id="nr-diagnosis-help">Use the evidence above and select the most likely cause.</p>
+            </div>
+    
+            <div id="nr-diagnosis-options" class="nr-options"></div>
+    
+            <div class="nr-actions">
+              <button type="button" id="nr-apply-fix" class="nr-primary" disabled>
+                Apply fix
+              </button>
+              <button type="button" id="nr-next" class="nr-secondary" hidden>
+                Next incident →
+              </button>
+              <button type="button" id="nr-restart" class="nr-secondary" hidden>
+                Restart challenge
+              </button>
+            </div>
+    
+            <div id="nr-feedback" class="nr-feedback" aria-live="polite"></div>
+          </div>
+    
+          <div id="nr-complete" class="nr-complete" hidden>
+            <span class="nr-complete-icon">✓</span>
+            <div>
+              <span class="nr-kicker">NETWORK RESTORED</span>
+              <h3>All incidents resolved.</h3>
+              <p>
+                You worked through DNS, default-gateway and DHCP/APIPA faults.
+              </p>
+            </div>
+            <div class="nr-score">
+              <strong id="nr-score-value">100%</strong>
+              <span>diagnostic efficiency</span>
+            </div>
+          </div>
+    
+          <div class="nr-built-with">
+            Built with HTML, CSS &amp; JavaScript · Scenario logic by Carlos Irias
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END NETWORK RESCUE -->
     <!-- SKILLS -->
     <section
       id="skills"
@@ -1358,6 +1484,6 @@
     </div>
 
   </footer>
-
+<script src="js/network-rescue.js?v=20261008-1"></script>
 </body>
 </html>
